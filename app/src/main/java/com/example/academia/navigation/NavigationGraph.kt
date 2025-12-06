@@ -9,12 +9,12 @@ import com.example.academia.screen.FocusScreen
 import com.example.academia.screen.HomeScreen
 import com.example.academia.screen.ProfileScreen
 
-
 @Composable
 fun NavigationGraph(navController: NavHostController, modifier: Modifier) {
     NavHost(
         navController = navController,
-        startDestination = Routes.HOME
+        startDestination = Routes.HOME,
+        modifier = modifier
     ) {
         composable(Routes.HOME) {
             HomeScreen()
